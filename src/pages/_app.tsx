@@ -15,7 +15,7 @@ function App({ Component, pageProps }: AppProps) {
         <link rel="manifest" href="/manifest.json" />
         <meta name="description" content="Zapt test application" />
         <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap"
           rel="stylesheet"
         />
       </Head>
