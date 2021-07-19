@@ -31,7 +31,9 @@ function Card({ testimony, name, state, city, img, profileImg }: CardProps) {
         alt={name}
         className="card-background"
       />
-      <Heading className="card-testimony">{testimony}</Heading>
+      <Heading level={2} className="card-testimony">
+        {testimony}
+      </Heading>
       <Profile state={state} city={city} profileImg={profileImg} name={name} />
     </S.Wrapper>
   );

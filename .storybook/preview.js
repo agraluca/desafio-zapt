@@ -1,6 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import GlobalStyles from "styles/global"
 import theme from "styles/theme"
+import '../.jest/next-image.mock'
 
 export const parameters = {
   backgrounds: {

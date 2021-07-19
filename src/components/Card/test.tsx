@@ -13,11 +13,7 @@ describe("<Card />", () => {
         name: /”Não consigo mais viver sem os produtos do Sítio, a diferença do que eu comprava antes e agora é abissal”/i,
       })
     ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: /Patricia Godoy/i })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole("heading", { name: /São Paulo/i })
-    ).toBeInTheDocument();
+    expect(screen.getByText(/Patricia Godoy/i)).toBeInTheDocument();
+    expect(screen.getByText(/São Paulo/i)).toBeInTheDocument();
   });
 });

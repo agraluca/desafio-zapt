@@ -22,7 +22,6 @@ export const Wrapper = styled.main`
 
 export const Slide = styled.section`
   ${({ theme }) => css`
-    overflow-x: hidden;
     position: relative;
     width: 100%;
     display: flex;
@@ -34,7 +33,7 @@ export const Slide = styled.section`
       width: 8.3rem;
       height: 8.3rem;
       color: ${theme.colors.blue};
-      z-index: ${theme.layers.base};
+      z-index: ${theme.layers.menu};
 
       &:hover,
       &:enabled {
@@ -67,10 +66,10 @@ export const Slide = styled.section`
       margin-bottom: ${theme.spacings.small};
       background-color: ${theme.colors.lightGray};
       box-shadow: none;
-
       height: 0.6rem;
       width: 0.6rem;
     }
+
     .rec-dot_active {
       background-color: ${theme.colors.blue};
     }

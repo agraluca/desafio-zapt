@@ -19,20 +19,25 @@ export const Info = styled.section`
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
-
     margin-left: ${theme.spacings.xxsmall};
+  `}
+`;
 
-    .profile-name {
-      font-size: ${theme.font.sizes.medium};
-      line-height: ${theme.font.sizes.large};
-      font-weight: ${theme.font.weight.normal};
-    }
+export const ProfileName = styled.p`
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    font-size: ${theme.font.sizes.medium};
+    line-height: ${theme.font.sizes.large};
+    font-weight: ${theme.font.weight.normal};
+  `}
+`;
 
-    .profile-info {
-      opacity: 0.8;
-      font-size: ${theme.font.sizes.small};
-      line-height: ${theme.font.sizes.medium};
-      font-weight: ${theme.font.weight.normal};
-    }
+export const ProfileInfo = styled.span`
+  ${({ theme }) => css`
+    color: ${theme.colors.white};
+    opacity: 0.8;
+    font-size: ${theme.font.sizes.small};
+    line-height: ${theme.font.sizes.medium};
+    font-weight: ${theme.font.weight.normal};
   `}
 `;

@@ -13,14 +13,10 @@ describe("<Profile />", () => {
   it("should render the heading", () => {
     renderWithTheme(<Profile {...profileItems} />);
 
-    expect(
-      screen.getByRole("heading", { name: /John Doe/i })
-    ).toBeInTheDocument();
+    expect(screen.getByText(/John Doe/i)).toBeInTheDocument();
 
-    expect(screen.getByRole("heading", { name: /Bahia/i })).toBeInTheDocument();
+    expect(screen.getByText(/Bahia/i)).toBeInTheDocument();
 
-    expect(
-      screen.getByRole("heading", { name: /Salvador/i })
-    ).toBeInTheDocument();
+    expect(screen.getByText(/Salvador/i)).toBeInTheDocument();
   });
 });

@@ -1,7 +1,5 @@
 import Image from "next/image";
 
-import Heading from "components/Heading";
-
 import * as S from "./styles";
 
 export type ProfileProps = {
@@ -22,12 +20,10 @@ function Profile({ profileImg, name, state, city }: ProfileProps) {
         className="profile-image"
       />
       <S.Info>
-        <Heading level={3} className="profile-name">
-          {name}
-        </Heading>
-        <Heading level={4} className="profile-info">
+        <S.ProfileName>{name}</S.ProfileName>
+        <S.ProfileInfo>
           {state} • {city}
-        </Heading>
+        </S.ProfileInfo>
       </S.Info>
     </S.Wrapper>
   );

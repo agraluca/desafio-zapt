@@ -77,6 +77,7 @@ $ yarn
 
 
 # Rodando o cliente
+$ yarn build
 $ yarn start
 ```
 
